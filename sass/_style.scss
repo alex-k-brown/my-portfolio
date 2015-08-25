@@ -1,0 +1,67 @@
+#main {
+  background: #bbd0cd;
+  padding: 10em;
+
+  h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 10em;
+
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    font-size: 3em;
+    color: #ededed;
+    letter-spacing: 1em;
+  }
+
+  .social {
+    padding: 2em;
+    color: #dadada;
+    text-align: center;
+    font-size: 3em;
+
+    .github {
+
+
+    }
+
+    li {
+
+      display: inline-block;
+      border: .1em solid #adadad;
+      border-radius: 50%;
+
+      &:hover {
+
+        border: .1em solid #919191;
+
+      }
+
+      i {
+        border: .1em solid #c4c4c4;
+        padding: .175em .08em 0 .08em;
+        border-radius: 50%;
+        width: 1.2em;
+        height: 1.2em;
+
+
+        &:hover {
+          color: #c4c4c4;
+          border: .1em solid #adadad;
+          cursor: pointer;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
