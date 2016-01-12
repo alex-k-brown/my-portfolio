@@ -3,21 +3,661 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Alex Brown's Portfolio</title>
+    <link rel="stylesheet" href="js/unslider-master/dist/css/unslider.css">
+    <link rel="stylesheet" href="js/unslider-master/dist/css/unslider-dots.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/Remodal-1.0.6/dist/remodal.css">
+    <link rel="stylesheet" href="js/Remodal-1.0.6//dist/remodal-default-theme.css">
+    <link rel="icon" type="image/png" href="img/alex-logo.png">
 </head>
 <body>
+    <div id="parallax"></div>
     <div id="main">
-        <h1>Alex Brown</h1>
-        <h2>Web Developer</h2>
-        <ul class="social">
-            <li class="github"><i class="fa fa-github"></i></li>
-            <li class="facebook"><i class="fa fa-facebook"></i></li>
-            <li class="twitter"><i class="fa fa-twitter"></i></li>
-            <li class="instagram"><i class="fa fa-instagram"></i></li>
-            <li class="linkedin"><i class="fa fa-linkedin"></i></li>
-        </ul>
+        <ul class="menu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#dev-portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul><!--menu-->
+        <div id="sandwich">
+            <i class="fa fa-bars"></i>
+            <ul id="sandwich-menu">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#dev-portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul><!--sandwich-menu-->
+        </div><!--sandwich-->
+        <div class="header">
+            <h1>Alex Brown</h1>
+            <h2>Web Developer & Designer</h2>
+            <ul class="social">
+                <li class="github"><a href="https://github.com/wolfofwashington" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li class="facebook"><a href="https://www.facebook.com/alex.k.brown" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/WolfofWA" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/wolfofwashington/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/alexbrowndeveloper" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div><!--header-->
+        <div id="profile">
+            <h3>Personal Profile</h3>
+            <img class="profile-image" src="img/alex.jpg" alt="Alex">
+            <div class="profile-text">
+                <p>I am originally from Seattle but I have lived in Utah for the past 8 years. I worked to put myself through school and, while working for a marketing group in SEO, I found that I was more drawn to the technology aspect of my work.</p>
+                <p> I enrolled in a coding bootcamp through Coding Campus and graduated from both there and BYU at the same time. Almost immediately after graduation, I transfered from my SEO Marketing job and started working with a custom development shop called Lift Media as a combination Web Developer/ Front-end Designer. I work with clients to help them develop and design websites that fit their needs. I think of myself as a developer first with a passion for design (in fact, I enjoyed designing so much that I started my own clothing shop called <a href="https://www.etsy.com/shop/WolfnCo" target="_blank">Wolf &amp; Co</a> where I design &amp; sell my own T-Shirts).</p>
+                <p>I love creating beautiful and functional websites. If you do too, then we'll make a great team.</p> </p>
+                <p>  
+            </div><!--profile-text-->
+        </div><!--profile-->
+        <div id="education" class="education">
+            <video id="education-vid" loop autoplay>
+                <source src="video/book.mp4" type='video/mp4;codecs="avc1.42EO1E, mp4a.40.2"' />
+                <source src="video/book.webm" type='video/webm;codecs="vp8, vorbis"' />
+            </video>
+            <div class="vid-overlay">
+                <div class="vid-text">
+                    <h3>Education</h3>
+                    <ul class="education-tiles">
+                        <li>
+                            <div class="side-1">
+                                <img class="cc-image" src="img/coding-campus.png" alt="Coding Campus Logo">
+                                <h4>Coding Campus</h4>
+                                <h5>Coding Bootcamp</h5>
+                                <h5>Provo, UT</h5>
+                            </div><!--side-1-->
+                            <div class="side-2">
+                                <h4>Coding Campus</h4>
+                                <h5>Graduation: Dec 2014</h5>
+                                <h5>Focus: Python, Django, javaScript AngularJS</h5>
+                                <p>Learned full stack development through instruction & real-world projects. Developed real-world skills by building & deploying working applications.</p>
+                                <a href="http://www.codingcamp.us/" target="_blank">codingcamp.us</a>
+                            </div><!--side-2-->
+                        </li>
+                        <li>
+                            <div class="side-1">
+                                <img src="img/byu.png" alt="BYU Logo">
+                                <h4>Brigham Young University</h4>
+                                <h5>Bachelor of Arts</h5>
+                                <h5>Provo, UT</h5>
+                            </div><!--side-1-->
+                            <div class="side-2">
+                                <h4>Brigham Young University</h4>
+                                <h5>Graduation: Dec 2014</h5>
+                                <p>Developed high quality writing and research techniques while studying History. Learned the basics of business (finance, marketing, accounting, etc) as a management minor. Member of the Innovation Academy.</p>
+                                <a href="http://home.byu.edu/" target="_blank">byu.edu</a>
+                            </div><!--side-2-->
+                        </li>
+                    </ul><!--education-tiles-->
+                </div><!--vid-text-->
+            </div><!--vid-overlay-->
+        </div><!--education-->
+        <div id="skills" class="skills">
+            <h3>Skills</h3>
+            <div class="specialty-box">
+                <h4>Development Specialties</h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>javaScript</li>
+                    <li>jQuery</li>
+                    <li>Mobile Responsiveness</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <ul>
+                    <li>Git</li>
+                    <li>WordPress</li>
+                    <li>Shopify</li>
+                    <li>Instructional Development</li>
+                    <li>Google Analytics</li>
+                    <li>Google Development API</li>
+                </ul>
+            </div><!--specialty-box-->
+            <div class="experience-box">
+                <h4>Development Experience</h4>
+                <ul>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>AngularJS</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                </ul>
+            </div><!--experience-box-->
+            <div class="specialty-box">
+                <h4>Design Specialties</h4>
+                <ul>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Responsive Web Design</li>
+                    <li>Branding</li>
+                    <li>Logo Design</li>
+                    <li>Clothing Design</li>
+                </ul>
+            </div><!--specialty-box-->
+            <div class="experience-box">
+                <h4>Design Experience</h4>
+                <ul>
+                    <li>UI/UX</li>
+                </ul>
+            </div><!--experience-box-->
+        </div><!--skills-->
+        <div id="dev-portfolio">
+            <h3>Portfolio</h3>
+            <h4>Development</h4>
+            <div id="desktop-slider" class="portfolio-slider">
+                <ul>
+                    <li>
+                        <ul class="dev-port-list">
+                            <li>
+                                <a target="_blank" href="http://uacte.org/">
+                                    <img src="img/uacte.png" alt="UACTE Website">
+                                    <h5>UACTE Website</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://onpurple.myshopify.com/">
+                                    <img src="img/purple.png" alt="Purple Shopify Site">
+                                    <h5>Purple Shopify Website</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://clients.liftmedia.io/wardbros/">
+                                    <img src="img/ward-bros.png" alt="Ward Bros Site">
+                                    <h5>Ward Bros Website</h5>
+                                </a>
+                            </li>
+                        </ul><!--dev-port-list-->
+                    </li>
+                    <li>
+                        <ul class="dev-port-list">
+                            <li>
+                                <a target="_blank" href="http://thewindsormanor.com/">
+                                    <img src="img/windsor-manor.png" alt="Windsor Manor Website">
+                                    <h5>Windsor Manor Website</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://itovi.com/">
+                                    <img src="img/itovi.png" alt="iTOVi Website">
+                                    <h5>iTOVi Website</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://drallenortho.com/">
+                                    <img src="img/dr-allen.png" alt="Dr. Allen Website">
+                                    <h5>Dr. Allen Website</h5>
+                                </a>
+                            </li>
+                        </ul><!--dev-port-list-->
+                    </li>
+                    <li>
+                        <ul class="dev-port-list">
+                            <li>
+                                <a target="_blank" href="http://roomchoice.com/">
+                                    <img src="img/RoomChoice.png" alt="RoomChoice Web App">
+                                    <h5>RoomChoice Web App</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://dental.liftmedia.io/">
+                                    <img src="img/dentist.png" alt="Multipage Dentist Website Template">
+                                    <h5>Multipage Dentist Website Template</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://clients.liftmedia.io/wordpress-dentist-theme/liftstarter/">
+                                    <img src="img/dentist-single-page.png" alt="Single Page Dentist Website Template">
+                                    <h5>Single Page Dentist Website Template</h5>
+                                </a>
+                            </li>
+                        </ul><!--dev-port-list-->
+                    </li>
+                    <li>
+                        <ul class="dev-port-list">
+                            <li>
+                                <a target="_blank" href="http://clients.liftmedia.io/pie-chart/">
+                                    <img src="img/roomchoice-sales.png" alt="RoomChoice Online Sales Tool">
+                                    <h5>RoomChoice Online Sales Tool</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://clients.liftmedia.io/labhero-quiz/">
+                                    <img src="img/versado.png" alt="eLearning Quiz for Versado Training">
+                                    <h5>eLearning Quiz for Versado Training</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://alex-k-brown.com/box-of-love/">
+                                    <img src="img/box-of-love.png" alt="Box of Love Website Mockup">
+                                    <h5>Box of Love Website Mockup</h5>
+                                </a>
+                            </li>
+                        </ul><!--dev-port-list-->
+                    </li>
+                    <li>
+                        <ul class="dev-port-list">
+                            <li>
+                                <a target="_blank" href="http://alex-k-brown.com/wedding-planner/">
+                                    <img src="img/perfect.png" alt="Perfect Website Mockup">
+                                    <h5>Perfect Website Mockup</h5>
+                                </a>
+                            </li>
+                        </ul><!--dev-port-list-->
+                    </li>
+                </ul>
+            </div><!--desktop-slider-->
+            <ul id="mobile-slider">
+                <li>
+                    <a target="_blank" href="http://uacte.org/">
+                        <img src="img/uacte.png" alt="UACTE Website">
+                        <h5>UACTE Website</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://onpurple.myshopify.com/">
+                        <img src="img/purple.png" alt="Purple Shopify Site">
+                        <h5>Purple Shopify Website</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://clients.liftmedia.io/wardbros/">
+                        <img src="img/ward-bros.png" alt="Ward Bros Site">
+                        <h5>Ward Bros Website</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://thewindsormanor.com/">
+                        <img src="img/windsor-manor.png" alt="Windsor Manor Website">
+                        <h5>Windsor Manor Website</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://itovi.com/">
+                        <img src="img/itovi.png" alt="iTOVi Website">
+                        <h5>iTOVi Website</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://drallenortho.com/">
+                        <img src="img/dr-allen.png" alt="Dr. Allen Website">
+                        <h5>Dr. Allen Website</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://roomchoice.com/">
+                        <img src="img/RoomChoice.png" alt="RoomChoice Web App">
+                        <h5>RoomChoice Web App</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://dental.liftmedia.io/">
+                        <img src="img/dentist.png" alt="Multipage Dentist Website Template">
+                        <h5>Multipage Dentist Website Template</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://clients.liftmedia.io/wordpress-dentist-theme/liftstarter/">
+                        <img src="img/dentist-single-page.png" alt="Single Page Dentist Website Template">
+                        <h5>Single Page Dentist Website Template</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://clients.liftmedia.io/pie-chart/">
+                        <img src="img/roomchoice-sales.png" alt="RoomChoice Online Sales Tool">
+                        <h5>RoomChoice Online Sales Tool</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://clients.liftmedia.io/labhero-quiz/">
+                        <img src="img/versado.png" alt="eLearning Quiz for Versado Training">
+                        <h5>eLearning Quiz for Versado Training</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://alex-k-brown.com/box-of-love/">
+                        <img src="img/box-of-love.png" alt="Box of Love Website Mockup">
+                        <h5>Box of Love Website Mockup</h5>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://alex-k-brown.com/wedding-planner/">
+                        <img src="img/perfect.png" alt="Perfect Website Mockup">
+                        <h5>Perfect Website Mockup</h5>
+                    </a>
+                </li>
+                </ul>
+            </ul><!--mobile-slider-->
+            <h4>Design</h4>
+            <ul class="des-port-list">
+                <li data-remodal-target="website-modal">
+                    <i class="fa fa-desktop"></i>
+                    <h5>Websites</h5>
+                </li>
+                <li data-remodal-target="logo-modal">
+                    <i class="fa fa-trademark"></i>
+                    <h5>Logos</h5>
+                </li>
+                <li data-remodal-target="clothing-modal">
+                    <i class="fa fa-tags"></i>
+                    <h5>Clothing</h5>
+                </li>
+                <!--<li>
+                    <i class="fa fa-image"></i>
+                    <h5>Prints</h5>
+                </li>-->
+            </ul><!--des=port-list-->
+        </div><!--dev-portfolio-->
+        <div id="contact" class="contact">
+            <div class="overlay">
+                <div class="overlay-background">
+                    <h3>Contact Me</h3>
+                    <ul class="contact-list">
+                        <li><a href="mailto:brown.alex.k@gmail.com"><i class="fa fa-envelope"></i> brown.alex.k@gmail.com</a></li>
+                        <li><a href="tel:2533410222"><i class="fa fa-phone"></i> (253) 341-0222</a></li>
+                        <li><a href="https://www.linkedin.com/in/alexbrowndeveloper" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                    </ul><!--contact-list-->
+                </div><!--overlay-background-->
+            </div><!--overlay-->
+            <div id="map"></div>
+        </div><!--contact-->
     </div><!--main-->
+
+<!-- Website Modal -->
+
+    <div class="remodal" id="website-modal" data-remodal-id="website-modal"
+      data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h3>Original Website Designs</h3>
+      <ul>
+          <li>
+              <a href="http://uacte.org/" target="_blank">
+                  <img src="img/uacte.png" alt="UACTE Website">
+                  <h5>UACTE</h5>
+              </a>
+          </li>
+          <li>
+              <a href="http://clients.liftmedia.io/wardbros/" target="_blank">
+                  <img src="img/ward-bros.png" alt="Ward Bros Website">
+                  <h5>Ward Bros</h5>
+              </a>
+          </li>
+          <li>
+              <a href="https://itovi.com/" target="_blank">
+                  <img src="img/itovi.png" alt="iTOVi Website">
+                  <h5>iTOVi</h5>
+              </a>
+          </li>
+          <li>
+              <a href="http://alex-k-brown.com/box-of-love/" target="_blank">
+                  <img src="img/box-of-love.png" alt="Box of Love Website">
+                  <h5>Box of Love Mockup</h5>
+              </a>
+          </li>
+          <li>
+              <a href="http://alex-k-brown.com/wedding-planner/" target="_blank">
+                  <img src="img/perfect.png" alt="Perfect Website">
+                  <h5>Perfect Mockup</h5>
+              </a>
+          </li>
+      </ul>
+    </div><!--website-modal-->
+
+<!-- Logos Modal -->
+
+    <div class="remodal" id="logo-modal" data-remodal-id="logo-modal"
+      data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h3>Logos</h3>
+      <h5>Wolf &amp; Co</h5>
+      <ul>
+          <li class="wolf-long">
+              <img src="img/wolf-long.png" alt="Wolf and Co Logo 3">
+          </li><!--wolf-long-->
+          <li>
+              <img src="img/wolf-small.png" alt="Wolf and Co Logo 1">
+          </li>
+          <li>
+              <img src="img/wolf-co-large-logo-1.png" alt="Wolf and Co Logo 2">
+          </li>
+      </ul>
+      <h5>Perfect</h5>
+      <ul>
+          <li class="wolf-long">
+              <img src="img/perfect-long.png" alt="Perfect Logo 1">
+          </li><!--wolf-long-->
+          <li>
+              <img src="img/perfect-small.png" alt="Perfect Logo 2">
+          </li>
+      </ul>
+      <h5>Turnt Classics</h5>
+      <ul>
+          <li class="wolf-long">
+              <img src="img/turnt-long.jpg" alt="Turnt Classics Logo 2">
+          </li><!--wolf-long-->
+          <li>
+              <img src="img/turnt-small.png" alt="Turnt Classics Logo 1">
+          </li>
+      </ul>
+      <h5>Box of Love</h5>
+      <ul>
+          <li>
+              <img src="img/box-of-love-logo.png" alt="Box of Love Logo">
+          </li>
+      </ul>
+    </div><!--logo-modal-->
+
+<!-- Clothing Modal -->
+
+    <div class="remodal" id="clothing-modal" data-remodal-id="clothing-modal"
+      data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h3>T-Shirt Designs</h3>
+      <ul class="clothing-list">
+          <li>
+              <a href="https://www.etsy.com/listing/258834452/money-over-everything-shirt?ref=shop_home_active_3" target="_blank">
+                  <img src="img/money-over-everything.jpg" alt="Money Over Everthing T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/241825848/i-cant-feel-my-face-t-shirt?ref=shop_home_active_4" target="_blank">
+                  <img src="img/face.png" alt="I Can't Feel My Face T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/244738519/look-back-at-it-t-shirt?ref=shop_home_active_5" target="_blank">
+                  <img src="img/look-back.png" alt="Look Back At It T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/242928040/king-kunta-t-shirt?ref=shop_home_active_7" target="_blank">
+                  <img src="img/kunta.png" alt="King Kunta T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/258720767/im-not-a-businessman-t-shirt?ref=shop_home_active_6" target="_blank">
+                  <img src="img/businessman.png" alt="I'm Not a Businessman T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/242473244/classic-man-t-shirt?ref=shop_home_active_4" target="_blank">
+                  <img src="img/classic.png" alt="Classic Man T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/241722379/i-feel-blessed-t-shirt?ref=shop_home_active_9" target="_blank">
+                  <img src="img/blessed.jpg" alt="I Feel Blessed T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/259602091/original-rump-shakers-t-shirt?ref=shop_home_active_11" target="_blank">
+                  <img src="img/rump-shakers.png" alt="Original Rump Shakers T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/259599513/im-bringing-sexy-back-t-shirt-mens?ref=shop_home_active_12" target="_blank">
+                  <img src="img/sexy-back-men.png" alt="I'm Bringing Sexy Back T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/259597513/im-bringing-sexy-back-t-shirt-womens?ref=shop_home_active_13" target="_blank">
+                  <img src="img/sexy-back-women.png" alt="I'm Bringing Sexy Back T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/244963749/ass-fat-yeah-i-know-t-shirt" target="_blank">
+                  <img src="img/yeah-i-know.png" alt="Yeah I Know T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/242761543/i-got-enemies-t-shirt?ref=shop_home_active_2" target="_blank">
+                  <img src="img/enemies.png" alt="I Got Enemies T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/251112418/hotline-bling-t-shirt?ref=shop_home_active_14" target="_blank">
+                  <img src="img/hotline-bling.png" alt="Hotline Bling T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/258866178/no-woman-no-cry-t-shirt?ref=shop_home_active_15" target="_blank">
+                  <img src="img/no-woman.png" alt="No Woman No Cry T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/258819224/buffalo-soldier-t-shirt?ref=shop_home_active_17" target="_blank">
+                  <img src="img/buffalo-soldier.png" alt="Buffalo Soldier T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/241824510/the-post-to-be-t-shirt?ref=shop_home_active_18" target="_blank">
+                  <img src="img/post-to-be.png" alt="Post to Be T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/255643836/you-used-to-call-me-shirt?ref=shop_home_active_19" target="_blank">
+                  <img src="img/cell-phone.png" alt="You Used to Call Me T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/255535491/look-good-for-you-shirt?ref=shop_home_active_20" target="_blank">
+                  <img src="img/look-good.jpg" alt="Look Good For You T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/250520844/mo-money-mo-problems-t-shirt?ref=shop_home_active_22" target="_blank">
+                  <img src="img/mo-money.png" alt="Mo Money Mo Problems T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/242472352/club-going-up-on-a-tuesday-t-shirt?ref=shop_home_active_2" target="_blank">
+                  <img src="img/tuesday.png" alt="Club Going Up on a Tuesday T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/243163033/bitch-better-have-my-money-shirt?ref=shop_home_active_24" target="_blank">
+                  <img src="img/money.png" alt="Bitch Better Have My Money T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/243270669/if-i-die-im-a-legend-shirt?ref=shop_home_active_1" target="_blank">
+                  <img src="img/legend.png" alt="If I Die I'm a Legend T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/249933343/james-dean-daydream-t-shirt?ref=shop_home_active_23" target="_blank">
+                  <img src="img/james-dean.png" alt="James Dean Daydream T-Shirt">
+              </a>
+          </li>
+          <li>
+              <a href="https://www.etsy.com/listing/242760295/runnin-through-the-6-with-my-woes-t?ref=shop_home_active_8" target="_blank">
+                  <img src="img/woes.png" alt="Runnin Through the 6 with My Woes T-Shirt">
+              </a>
+          </li>
+      </ul>
+    </div><!--clothing-modal-->
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/unslider-master/src/js/unslider.js"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 40.243116, lng: -111.651717},
+                zoom: 12,
+                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}],
+                scrollwheel: false
+
+            });
+
+        }
+
+
+    </script>
+    <script>
+        var vid = document.getElementById("education-vid");
+        vid.playbackRate = 0.3;
+    </script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.portfolio-slider').unslider();
+        });
+
+        $(".logo-1").hover(
+            function() {
+                $("#name-1").css("display", "block");
+            }, function () {
+                    $("#name-1").css("display", "none")
+                }
+        );
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOckNEUjnggo5HBfXCcJDqFcs-wuMVBzQ&callback=initMap">
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-69420125-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script src="js/Remodal-1.0.6/dist/remodal.min.js"></script>
+    <script>
+        $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+    </script>
+    <script>
+        $("#sandwich").click(function() {
+            $("#sandwich-menu").toggle();
+            if ($("#sandwich").hasClass("white-background")) {
+                $("#sandwich").removeClass("white-background");
+            } else {
+                $("#sandwich").addClass("white-background");
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,6 +1,49 @@
+#parallax {
+  background: url("../img/keyboard-dark.jpg");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}/*parallax*/
+
 #main {
-  background: #bbd0cd;
-  padding: 10em;
+  z-index: 100;
+
+  #sandwich {
+    display: none;
+
+  }/*sandwich*/
+
+  .menu {
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    display: block;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      color: #bbd0cd;
+      width: 13.9%;
+      text-align: center;
+      text-transform: lowercase;
+      font-size: 1.25em;
+
+      a {
+        text-decoration: none;
+        color: #bbd0cd;
+
+      }/*a*/
+    }/*li*/
+  }/*menu*/
+
+  .header {
+    padding: 10em 0 0 0;
+
+  }/*header*/
 
   h1 {
     color: rgba(255, 255, 255, 1);
@@ -9,7 +52,7 @@
     text-align: center;
     font-size: 10em;
 
-  }
+  }/*h1*/
 
   h2 {
     text-align: center;
@@ -17,8 +60,41 @@
     text-transform: lowercase;
     font-size: 3em;
     color: #ededed;
-    letter-spacing: 1em;
+    letter-spacing: .5em;
+
+
+  }/*h2*/
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    color: #919191;
+    text-align: left;
+
   }
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-transform: lowercase;
+
+  }/*h4*/
+
+  h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75em;
+    font-weight: 100;
+
+  }/*h5*/
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-weight: 100;
+
+  }/*p*/
 
   .social {
     padding: 2em;
@@ -26,22 +102,15 @@
     text-align: center;
     font-size: 3em;
 
-    .github {
-
-
-    }
-
     li {
-
       display: inline-block;
       border: .1em solid #adadad;
       border-radius: 50%;
 
       &:hover {
-
         border: .1em solid #919191;
 
-      }
+      }/*hover*/
 
       i {
         border: .1em solid #c4c4c4;
@@ -49,6 +118,7 @@
         border-radius: 50%;
         width: 1.2em;
         height: 1.2em;
+        color: #dadada;
 
 
         &:hover {
@@ -56,12 +126,953 @@
           border: .1em solid #adadad;
           cursor: pointer;
 
-        }
+        }/*hover*/
+      }/*i*/
+    }/*li*/
+  }/*social*/
+  #profile {
+    background: white;
+    padding: 100px 10%;
+    text-align: center;
 
+    a {
+      color: #bbd0cd;
+      text-decoration: none;
+
+    }/*a*/
+
+    .profile-image {
+      width: 20%;
+      padding: 120px 2% 0;
+      display: inline-block;
+      vertical-align: top;
+
+    }/*profile-image*/
+
+    .profile-text {
+      width: 70%;
+      padding: 100px 2% 0;
+      display: inline-block;
+      vertical-align: top;
+
+      p {
+        color: #919191;
+        text-align: left;
+        padding: 6.25px 0;
+
+      }/*p*/
+    }/*profile-text*/
+
+    .profile-tiles {
+      text-align: center;
+      padding: 100px 0 0 0;
+
+      li {
+        width: 22.5%;
+        height: 400px;
+        background: orange;
+        display: inline-block;
+        margin: 0 1%;
+
+      }/*li*/
+
+      .family {
+        background: url("../img/bridal-opt.jpg") center;
+        background-size: cover
+      ;
       }
-
-    }
+    }/*profile-tiles*/
+  }/*profile*/
+  #skills {
+    padding: 100px 10%;
+    
 
   }
 
-}
+  #dev-portfolio {
+    padding: 100px 10%;
+
+    #mobile-slider {
+      display: none;
+
+    }/*mobile-slider*/
+
+    .unslider {
+      overflow: hidden;
+
+    }/*unslider*/
+
+    .unslider-nav ol li {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+
+    }/*unslider-nav ol li*/
+
+    .next {
+      margin: -250px 50px 0 0;
+
+    }/*next*/
+
+    .prev {
+      margin: -250px 0 0 50px;
+
+    }/*prev*/
+
+    .unslider-arrow {
+      border: 10px solid white;
+      border-radius: 100%;
+      height:60px;
+      width: 60px;
+      text-align: center;
+
+      &:hover {
+        background: rgba(0,0,0,.4);
+
+      }/*hover*/
+
+      i {
+        color: white;
+        font-size: 40px;
+        padding: 9px 0 0 0;
+
+
+      }/*i*/
+    }/*unslider-arrow*/
+
+    h3 {
+      color: white;
+
+    }/*h3*/
+
+    h4 {
+      padding: 50px 5% 25px;
+      color: white;
+
+    }/*h4*/
+
+    h5 {
+      color: white;
+      padding: 12.5px 0 0 0;
+    }/*h5*/
+
+    a{
+      text-decoration: none;
+
+    }/*a*/
+
+    .dev-port-list {
+      padding: 0 5%;
+      vertical-align: top;
+
+      li {
+        text-align: center;
+        width: 30%;
+        padding: 25px 1.5%;
+        display: inline-block;
+        vertical-align: top;
+
+        img {
+          width: 100%;
+        }/*img*/
+      }/*li*/
+    }/*dev-port-list*/
+    .des-port-list {
+      padding: 0 2%;
+      text-align: center;
+
+      li {
+        cursor: pointer;
+        width: 140px;
+        height: 140px;
+        border: 10px solid white;
+        color: white;
+        border-radius: 100%;
+        padding: 25px;
+        text-align: center;
+        display: inline-block;
+        margin: 50px 1% 0;
+
+        &:hover {
+          background: rgba(0,0,0,.4);
+
+        }/*hover*/
+
+        h5 {
+          color: white;
+        }/*h5*/
+
+        i {
+          font-size: 80px;
+          padding: 10px 0 0 0;
+
+        }/*i*/
+      }/*li*/
+    }/*des-port-list*/
+  }/*dev-portfolio*/
+
+  .skills {
+    padding: 100px 10%;
+    background: url('../img/skills-2.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .design {
+      padding: 50px 0 0;
+
+    }/*design*/
+
+    ul {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 100;
+      //list-style: disc inside;
+      color: #919191;
+      display: inline;
+
+      li {
+        padding: 5px 0 5px 20px;
+        width: 100%;
+      }
+    }/*ul*/
+
+    h3 {
+      color: #919191;
+
+    }/*h3*/
+
+    h4, h5 {
+      color: white;
+
+    }/*h4, h5*/
+
+    h4 {
+      padding: 0px 0 25px;
+
+    }/*h4*/
+
+    .logo-name {
+
+
+    }/*logo-name*/
+
+    .specialty-box {
+      background: rgba(0,0,0,.8);
+      padding: 50px 2% 50px;
+      width: 41%;
+      text-align: left;
+      vertical-align: top;
+      display: inline-block;
+      margin: 25px 2%;
+
+      ul {
+        display: inline-block;
+        color: white;
+
+      }/*ul*/
+
+    }/*specialty-box*/
+
+    .dev-height {
+      height: 625px;
+
+    }/*dev-height*/
+
+    .des-height {
+      height: 450px;
+
+    }/*des-height*/
+
+    .experience-box {
+      background: rgba(0,0,0,.8);
+      padding: 50px 2% 50px;
+      width: 41%;
+      text-align: left;
+      vertical-align: top;
+      display: inline-block;
+      margin: 25px 2%;
+
+      ul {
+        color: white;
+        font-weight: 100;
+      }/*ul*/
+
+      .specialty-skills {
+
+        li {
+          width: 8%;
+
+        }/*li*/
+      }/*specialty-skills*/
+    }/*experience-box*/
+
+    .specialty-skills {
+      text-align: center;
+
+      li {
+        width: 8%;
+        padding: 0 0 50px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+
+        img {
+          width: 80%;
+
+        }/*img*/
+      }/*li*/
+
+      h5 {
+        font-size: 1.4em;
+        font-weight: 100;
+        line-height: 1.2em;
+      }/*h5*/
+    }/*specialty-skills*/
+
+    .development-skills, .design-skills {
+      padding: 0 5%;
+
+      li {
+        width: 12%;
+        padding: 25px 1%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+
+        img {
+          width: 100%;
+
+        }/*img*/
+
+        h5 {
+          text-align: center;
+          color: white;
+
+        }/*h5*/
+      }/*li*/
+    }/*development-skills*/
+  }/*skills*/
+
+  .contact {
+
+    h3 {
+      color: white;
+
+    }/*h3*/
+
+    h5 {
+      display: inline-block;
+      width: 49%;
+      text-align: right;
+      color: white;
+
+    }/*h5*/
+
+    input {
+      width: 60%;
+      padding: 12.5px;
+      margin: 12.5px 0;
+      border: none;
+      box-shadow: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2em;
+      font-weight: 100;
+
+    }/*input*/
+
+    form {
+      text-align: center;
+      padding: 50px 0 0 0;
+
+    }/*form*/
+  }/*contact*/
+
+  .contact {
+    #map {
+      width: 100%;
+      height: 500px;
+      position: relative;
+
+    }/*map*/
+
+    .overlay {
+      position: absolute;
+      z-index: 99;
+      padding: 100px 10%;
+      width: 72%;
+
+      .overlay-background {
+        background: rgba(0,0,0,.8);
+        width: 100%;
+        padding: 50px 5% 100px;
+
+        ul {
+          text-align: center;
+          padding: 25px 0 0;
+
+          li {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            display: inline-block;
+            padding: 0 3%;
+            font-weight: 100;
+
+            a {
+              color: white;
+              text-decoration: none;
+
+              i {
+                border: 3px solid white;
+                border-radius: 100%;
+                height: 15px;
+                width: 25px;
+                padding: 5px 0;
+                font-size: 14px;
+
+              }/*i*/
+            }/*a*/
+          }/*li*/
+        }/*ul*/
+      }/*overlay-background*/
+    }/*overlay*/
+  }/*contact*/
+
+  .education {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    min-width: 100%;
+    max-height: 800px;
+
+    h3, h4, h5 {
+      color: white;
+
+    }/*h3, h4, h5*/
+
+    h4 {
+      padding: 50px 0 0 0;
+
+    }/*h4*/
+
+    h5{
+      padding: 25px 0 0 0;
+
+    }/*h5*/
+
+    .cc-image {
+      padding: 33.5px 0;
+
+    }/*cc-image*/
+
+    video {
+      width: auto;
+      min-width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+    }/*video*/
+
+    .vid-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      overflow: hidden;
+    }/*vid-overlay*/
+
+    .vid-text {
+      text-align: left;
+      position: absolute;
+      padding: 100px 10%;
+      width: 93%;
+      overflow: hidden;
+
+      .education-tiles {
+        margin: 50px 0 0;
+
+        li {
+          width: 40%;
+          margin: 0 1.5%;
+          display: inline-block;
+          background: rgba(0,0,0,.7);
+          vertical-align: top;
+          text-align: center;
+          padding: 50px 0;
+          height: 400px;
+
+          img {
+            width: 150px;
+
+          }/*img*/
+
+          .side-2 {
+            display: none;
+
+            p {
+              color: white;
+              line-height: 1.5em;
+              font-size: 1.2em;
+              text-align: left;
+              padding: 25px 8%;
+
+            }/*p*/
+
+            h4 {
+              padding: 0;
+
+            }/*h4*/
+
+            a {
+              font-size: 1.5em;
+              font-family: 'Roboto', sans-serif;
+              text-decoration: none;
+              color: #bbd0cd;
+
+            }/*a*/
+          }/*side-2*/
+
+          &:hover {
+            background: rgba(135,135,135,.7);
+
+            .side-1 {
+              display: none;
+
+            }/*side-1*/
+
+            .side-2 {
+              display: block;
+
+            }/*side-2*/
+          }/*hover*/
+        }/*li*/
+      }/*education-tiles*/
+    }/*vid-text*/
+  }/*education*/
+}/*main*/
+
+#website-modal, #logo-modal, #clothing-modal {
+  background: #919191;
+
+  .remodal-close {
+    color: white;
+
+  }/*remodal-close*/
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+    color: white;
+    text-align: left;
+
+  }/*h3*/
+
+  ul {
+    padding: 25px 0 0;
+    vertical-align: top;
+
+    li {
+      width: 45%;
+      padding: 12.5px 2%;
+      display: inline-block;
+      vertical-align: top;
+
+      a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+
+      }/*a*/
+
+      h5 {
+        padding: 5px;
+
+      }/*h5*/
+
+      img {
+        width: 100%;
+      }/*img*/
+    }/*li*/
+  }/*ul*/
+}/*website-modal, logo-modal, clothing-modal*/
+
+#logo-modal {
+  background: white;
+
+  .remodal-close {
+    color: #919191;
+
+  }/*remodal-close*/
+
+  h3 {
+    color: #919191;
+
+  }/*h3*/
+
+  h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #919191;
+    padding: 50px 0 0 5%;;
+    text-align: left;
+
+  }/*h5*/
+
+  ul {
+
+    li {
+      width: 28%;
+      
+    }/*li*/
+
+    .wolf-long {
+      width: 70%;
+
+    }/*wolf-long*/
+  }/*ul*/
+}/*logo-modal*/
+
+@media (max-width: 1050px) {
+  #main {
+
+    #dev-portfolio {
+
+      .next {
+        margin: -250px 0 0 50px;
+
+      }/*next*/
+
+      .prev {
+        margin: -250px 50px 0 0;
+
+      }/*prev*/
+    }/*dev-portfolio*/
+  }/*main*/
+}/*max-width 1000px*/
+
+@media (max-width: 1000px) {
+  #main {
+    .menu {
+      display: none;
+    }/*menu*/
+
+    .white-background {
+      background: white;
+
+    }/*white-background*/
+
+    #sandwich {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+
+      i {
+        color: #bbd0cd;
+        font-size: 8em;
+        float: right;
+        padding: 20px 2% 0;
+
+      }/*i*/
+
+      #sandwich-menu {
+        display: none;
+        background: white;
+        float: right;
+        font-size: 6em;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        color: #bbd0cd;
+
+        li {
+
+          text-align: right;
+          padding: 20px 160px 20px 0;
+
+        }/*li*/
+
+        a {
+          text-decoration: none;
+          color: #bbd0cd;
+
+        }/*a*/
+      }/*sandwich-menu*/
+    }/*sandwich*/
+
+    .social {
+      font-size: 5em;
+      padding: 2em .2em 0;
+
+    }/*social*/
+
+    h3 {
+      font-size: 8em;
+
+    }/*h3*/
+
+    p {
+      font-size: 2em
+
+    }/*p*/
+
+    h1 {
+      font-size: 10em;
+
+    }/*h1*/
+
+    .header {
+      padding: 300px 0 200px;
+
+    }/*header*/
+
+    #profile {
+      padding: 200px 10%;
+
+      .profile-image, .profile-text {
+        display: block;
+
+      }/*profile-image, profile-text*/
+
+      .profile-image {
+        width: 80%;
+        margin: auto;
+
+      }/*profile-image*/
+
+      .profile-text {
+        width: 100%;
+
+        p {
+        padding: 25px 0;
+        line-height: 70px;
+
+      }/*p*/
+      }/*profile-text*/
+    }/*profile*/
+
+    .education {
+      height: 2400px;
+      max-height: none;
+
+      h3 {
+        padding: 0 0 100px;
+
+      }/*h3*/
+
+      video {
+        height: 800px;
+
+      }/*video*/
+
+      h4 {
+        font-size: 6em;
+        margin: 50px 0;
+
+      }/*h4*/
+
+      h5 {
+        font-size: 4em;
+
+      }/*h5*/
+
+      .vid-text {
+        padding: 200px 10%;
+
+        .education-tiles {
+
+          li {
+            width: 85%;
+            margin: 25px 0;
+            height: 700px;
+
+          }/*li*/
+        }/*education-tiles*/
+      }/*vide-text*/
+    }/*education*/
+
+    #skills {
+      padding: 200px 10%;
+    }/*#skills*/
+
+    .skills {
+      
+      .specialty-box, .experience-box {
+        display: block;
+        width: 80%;
+        padding: 100px 10%;
+        margin: 100px 0;
+
+        h4 {
+          font-size: 5em;
+          padding: 0 0 100px;
+
+        }/*h4*/
+
+        ul {
+          display: block;
+          font-size: 3em;
+          padding: 0 5%;
+
+          li {
+            padding: 15px 0;
+
+          }/*li*/
+        }/*ul*/
+      }/*specialty-box, experience-box*/
+    }/*skills*/
+
+    #dev-portfolio {
+      padding: 200px 10%;
+
+      .prev {
+        margin: 0 50px 0 0;
+
+        }/*prev*/
+
+      #desktop-slider, .unslider-arrow, .unslider-nav {
+        display: none;
+        
+      }/*desktop-slider, unslider-arrow, unslidr-nav*/
+
+      #mobile-slider {
+        display: block;
+        text-align: center;
+        padding: 100px 0;
+
+        li {
+          padding: 50px 0;
+
+          img {
+            width: 100%;
+
+          }/*img*/
+
+          h5 {
+            font-size: 5em;
+
+          }/*h5*/
+        }/*li*/
+      }/*mobile-slider*/
+
+      h4 {
+        font-size: 6em;
+        padding: 100px 5% 0;
+
+      }/*h4*/
+
+      .des-port-list {
+        li {
+          display: block;
+          width: 500px;
+          height: 500px;
+          margin: 100px auto;
+          border: 20px solid white;
+          padding: 100px 60px 20px;
+
+          i {
+            font-size: 16em;
+          }/*i*/
+
+          h5 {
+            font-size: 6em;
+
+          }/*h5*/
+        }/*li*/
+      }/*des-port-list*/
+    }/*dev-portfolio*/
+
+    .contact {
+
+      .overlay {
+
+        .overlay-background {
+
+          h3 {
+            text-align: center;
+
+          }/*h3*/
+          ul {
+            li {
+              font-size: 3em;
+              display: block;
+              padding: 25px 0;
+              a {
+                i {
+                  font-size: 1em;
+                  width: 80px;
+                  height: 55px;
+                  padding: 15px 0;
+
+                }/*i*/
+              }/*a*/
+            }/*li*/
+          }/*ul*/
+        }/*overlay-background*/
+      }/*overlay*/
+
+      #map {
+        height: 1000px;
+
+      }/*map*/
+    }/*contact*/
+  }/*main*/
+
+  #website-modal, #logo-modal, #clothing-modal {
+    
+    .remodal-close {
+      width: 100px;
+      height: 100px;
+      font-size: 100px;
+
+      &:before {
+        font-size: 100px;
+        top: 20px;
+        left: 20px;
+
+      }/*before*/
+
+    }/*remodal-close*/
+
+    h3 {
+      font-size: 10em;
+      padding: 50px 0 0;
+    }/*h3*/
+
+    ul {
+      padding: 100px 0 0;
+
+      li {
+        width: 90%;
+        padding: 50px 0;
+
+        a {
+
+          h5 {
+            font-size: 4em;
+
+          }/*h5*/
+        }/*a*/
+      }/*li*/
+    }/*ul*/
+  }/*website-modal, #logo-modal, #clothing-modal*/
+
+  #logo-modal {
+
+    h5 {
+      font-size: 6em;
+      padding: 200px 5% 0;
+
+    }/*h5*/
+
+    ul {
+
+      .wolf-long {
+        width: 90%;
+
+      }/*wolf-long*/
+    }/*ul*/
+  }/*logo-modal*/
+}/*max-width 900px*/
