@@ -8,6 +8,7 @@
 
 #main {
   z-index: 100;
+  -webkit-text-size-adjust: 100%;
 
   #sandwich {
     display: none;
@@ -50,7 +51,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     text-align: center;
-    font-size: 10em;
+    font-size: 11em;
 
   }/*h1*/
 
@@ -67,7 +68,7 @@
 
   h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 100;
     color: #919191;
     text-align: left;
@@ -786,6 +787,7 @@
         width: 100%;
         font-family: 'Roboto', sans-serif;
         color: #bbd0cd;
+        padding: 0 0 80px 0;
 
         li {
 
@@ -808,20 +810,25 @@
 
     }/*social*/
 
-    h3 {
-      font-size: 8em;
+    h3, #h3 {
+      font-size: 120px;
 
     }/*h3*/
 
     p {
-      font-size: 2em
+      font-size: 56px;
+      line-height: 60px;
 
     }/*p*/
 
     h1 {
-      font-size: 10em;
+      font-size: 175px;
 
     }/*h1*/
+
+    h2 {
+      font-size: 72px;
+    }
 
     .header {
       padding: 300px 0 200px;
@@ -830,6 +837,11 @@
 
     #profile {
       padding: 200px 10%;
+
+      h3 {
+        font-size: 120px;
+
+      }/*h3*/
 
       .profile-image, .profile-text {
         display: block;
@@ -854,8 +866,17 @@
     }/*profile*/
 
     .education {
-      height: 2400px;
+      height: 2500px;
       max-height: none;
+      background: url(../img/education.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      #education-video, video {
+        display: none;
+
+      }/*education-video*/
 
       h3 {
         padding: 0 0 100px;
@@ -886,8 +907,19 @@
           li {
             width: 85%;
             margin: 25px 0;
-            height: 700px;
+            height: 800px;
 
+            .side-2 {
+
+              a {
+                font-size: 48px;
+              }/*a*/
+
+              p {
+                font-size: 36px;
+
+              }/*p*/
+            }/*side-2*/
           }/*li*/
         }/*education-tiles*/
       }/*vide-text*/
@@ -906,14 +938,14 @@
         margin: 100px 0;
 
         h4 {
-          font-size: 5em;
+          font-size: 80px;
           padding: 0 0 100px;
 
         }/*h4*/
 
         ul {
           display: block;
-          font-size: 3em;
+          font-size: 56px;
           padding: 0 5%;
 
           li {
@@ -951,14 +983,14 @@
           }/*img*/
 
           h5 {
-            font-size: 5em;
+            font-size: 72px;
 
           }/*h5*/
         }/*li*/
       }/*mobile-slider*/
 
       h4 {
-        font-size: 6em;
+        font-size: 96px;
         padding: 100px 5% 0;
 
       }/*h4*/
@@ -1000,11 +1032,12 @@
               display: block;
               padding: 25px 0;
               a {
+
                 i {
-                  font-size: 1em;
-                  width: 80px;
-                  height: 55px;
-                  padding: 15px 0;
+                  font-size: 30px;
+                  width: 55px;
+                  height: 35px;
+                  padding: 10px 0;
 
                 }/*i*/
               }/*a*/
